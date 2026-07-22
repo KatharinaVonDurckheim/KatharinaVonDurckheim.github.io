@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Data, code and research resources by Katharina von Dürckheim.">
+<title>Data & Resources | Katharina von Dürckheim</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a class="brand" href="index.html">Katharina von Dürckheim</a>
+  <button class="menu-toggle" aria-label="Toggle navigation"
+    onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="cv.html">CV</a>
+    <a href="publications.html">Publications</a>
+    <a href="research.html">Research</a>
+    <a href="resources.html">Data & Resources</a>
+    <a href="workshops.html">Workshops</a>
+  </div>
+</nav>
+
+<main>
+<header class="page-header">
+  <h1>Data, code & resources</h1>
+  <p class="lead">
+    Open research materials, data repositories, analytical workflows and
+    decision-support resources.
+  </p>
+</header>
+<aside class="on-page">
+  <strong>On this page</strong>
+  <a href="#repositories">Repositories</a>
+  <a href="#code">Code</a>
+  <a href="#interactive">Interactive resources</a>
+</aside>
+<section class="content-section">
+  <h2 id="repositories">Repositories</h2>
+  <article class="resource-item">
+    <h3><a href="https://github.com/KatharinaVonDurckheim/Elephant-Data-Repository">Elephant Data Repository</a></h3>
+    <p>
+      Research data, documentation and analytical materials associated with
+      elephant movement research.
+    </p>
+  </article>
+
+  <h2 id="code">Code and reproducible workflows</h2>
+  <article class="resource-item">
+    <h3>Movement ecology workflows</h3>
+    <p>
+      Planned resources include workflows for telemetry quality control,
+      home-range estimation, behavioural-state modelling, step-selection analysis,
+      remote-sensing extraction and visualisation.
+    </p>
+  </article>
+
+  <h2 id="interactive">Interactive resources</h2>
+  <article class="resource-item">
+    <h3>Maps and dashboards</h3>
+    <p>
+      This section can later host Shiny applications, interactive maps, teaching
+      dashboards or conservation decision-support tools.
+    </p>
+  </article>
+</section>
+</main>
+
+<footer>
+  <p>© 2026 Katharina von Dürckheim</p>
+  <p class="footer-note">Conservation ecology · Animal movement · Southern Africa</p>
+</footer>
+<script>
+const current = location.pathname.split('/').pop() || 'index.html';
+document.querySelectorAll('.nav-links a').forEach(a => {
+  if (a.getAttribute('href') === current) a.classList.add('active');
+});
+</script>
+
+</body>
+</html>
