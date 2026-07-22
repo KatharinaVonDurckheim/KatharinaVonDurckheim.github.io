@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Katharina von Dürckheim — conservation ecologist and animal movement researcher.">
+  <title>Wildlife Free to Roam | Katharina von Dürckheim</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a class="brand" href="index.html">Katharina von Dürckheim</a>
+  <button class="menu-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="publications.html">Publications</a>
+    <a href="projects.html">Projects</a>
+    <a href="teaching.html">Teaching & Workshops</a>
+    <a href="wfr.html">Wildlife Free to Roam</a>
+    <a href="cv.html">CV</a>
+  </div>
+</nav>
+
+<main>
+
+<header class="page-header">
+  <p class="eyebrow">Wildlife Free to Roam</p>
+  <h1>Research, capacity and conservation across connected landscapes</h1>
+  <p class="lead">Wildlife Free to Roam is an initiative focused on scientifically grounded conservation, movement ecology and practical capacity development.</p>
+</header>
+<section class="section split">
+  <div>
+    <h2>Purpose</h2>
+    <p>To strengthen the evidence, skills and partnerships needed to conserve wildlife movement across protected areas, borders and working landscapes.</p>
+  </div>
+  <div class="feature-panel">
+    <h3>Core activities</h3>
+    <ul>
+      <li>Applied movement-ecology research</li>
+      <li>Training and mentoring</li>
+      <li>Partnerships with conservation practitioners</li>
+      <li>Translation of science into management and policy</li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>© 2026 Katharina von Dürckheim · Conservation ecology and animal movement research</p>
+</footer>
+<script>
+document.querySelectorAll('.nav-links a').forEach(link => {
+  if (link.getAttribute('href') === location.pathname.split('/').pop() ||
+      (location.pathname.endsWith('/') && link.getAttribute('href') === 'index.html')) {
+    link.classList.add('active');
+  }
+});
+</script>
+
+</body>
+</html>
