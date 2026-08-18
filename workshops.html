@@ -5,10 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta
-    name="description"
-    content="Animal movement ecology workshops and quantitative training led or hosted by Katharina von Dürckheim."
-  >
+  <meta name="description"
+        content="Animal movement ecology workshops and quantitative training hosted by Katharina von Dürckheim.">
 
   <title>Workshops | Katharina von Dürckheim</title>
 
@@ -51,9 +49,7 @@
     Training & Capacity Building
   </p>
 
-  <h1>
-    Workshops & Resources
-  </h1>
+  <h1>Workshops</h1>
 
   <p class="lead">
     Training in animal movement ecology, spatial analysis and reproducible
@@ -64,31 +60,9 @@
 </header>
 
 
-<aside class="on-page">
+<section class="section">
 
-  <strong>On this page</strong>
-
-  <a href="#movement">
-    Animal movement
-  </a>
-
-  <a href="#quantitative">
-    Quantitative ecology
-  </a>
-
-  <a href="#resources">
-    Training resources
-  </a>
-
-</aside>
-
-
-<section class="content-section">
-
-  <h2 id="movement">
-    Animal movement and spatial ecology
-  </h2>
-
+  <h2>Animal movement and spatial ecology</h2>
 
   <article class="workshop">
 
@@ -97,37 +71,30 @@
     </h3>
 
     <p>
-      A two-day advanced training workshop covering telemetry fundamentals,
-      data quality, home-range estimation, behavioural-state modelling,
-      habitat selection, connectivity and reproducible workflows in R.
+      A two-day advanced training workshop in contemporary animal movement
+      ecology, combining conceptual lectures, practical coding sessions
+      and collaborative research discussions using African wildlife
+      telemetry data.
     </p>
 
     <p>
-      The workshop combines conceptual lectures, practical coding sessions
-      and collaborative research discussions using African wildlife telemetry
-      data.
+      The workshop covers movement data preparation, home-range estimation,
+      behavioural-state modelling, habitat selection, connectivity and
+      reproducible movement-ecology workflows in R.
     </p>
 
     <p class="meta">
-
-      <strong>Dates:</strong>
-      16–17 September 2026
-
+      <strong>Dates:</strong> 16–17 September 2026
       <br>
 
-      <strong>Location:</strong>
-      Stellenbosch University, South Africa
-
+      <strong>Location:</strong> Stellenbosch University
       <br>
 
-      <strong>Lead facilitator:</strong>
-      Dr Josh Cullen, University of California Santa Cruz
-
+      <strong>Presenter:</strong> Dr Josh Cullen, UC Santa Cruz
       <br>
 
-      <strong>Hosts:</strong>
-      Stellenbosch University, Wildlife Free to Roam and NiTHeCS
-
+      <strong>Hosts:</strong> Stellenbosch University,
+      Wildlife Free to Roam and NiTHeCS
     </p>
 
 
@@ -135,26 +102,25 @@
 
       <a
         class="button primary"
-        href="https://nithecs.ac.za/events/all-events/advanced-animal-movement-modelling-training-workshop/"
-        target="_blank"
-        rel="noopener noreferrer">
-        Workshop details & programme
+        href="https://nithecs.ac.za/events/all-events/advanced-animal-movement-modelling-training-workshop/">
+        View workshop details & programme
       </a>
 
     </div>
 
     <p>
-      Registration information and the workshop programme PDF are available
-      on the NiTHeCS event page.
+      The NiTHeCS workshop page contains registration information,
+      workshop details and the programme PDF under Materials.
     </p>
 
   </article>
 
+</section>
 
-  <h2 id="quantitative">
-    Quantitative ecology training
-  </h2>
 
+<section class="section">
+
+  <h2>Quantitative ecology training</h2>
 
   <article class="workshop">
 
@@ -163,9 +129,9 @@
     </h3>
 
     <p>
-      Training resources focus on quantitative approaches for analysing
-      animal movement and habitat use, with an emphasis on transparent
-      and reproducible analytical workflows.
+      Training focuses on quantitative approaches for analysing animal
+      movement and habitat use, with an emphasis on transparent and
+      reproducible analytical workflows.
     </p>
 
     <p>
@@ -176,16 +142,17 @@
 
   </article>
 
+</section>
 
-  <h2 id="resources">
-    Training resources
-  </h2>
+
+<section class="section">
+
+  <h2>Training resources</h2>
 
   <p>
-    Workshop slides, example datasets, R scripts and other training
-    materials will be made available as they are developed.
+    Workshop slides, example datasets, R scripts and supporting materials
+    will be made available through the Resources page.
   </p>
-
 
   <ul class="link-list">
 
@@ -208,10 +175,7 @@
     </li>
 
     <li>
-      <a
-        href="https://github.com/KatharinaVonDurckheim"
-        target="_blank"
-        rel="noopener noreferrer">
+      <a href="https://github.com/KatharinaVonDurckheim">
         GitHub repositories
       </a>
     </li>
@@ -238,15 +202,13 @@
 const current =
   location.pathname.split('/').pop() || 'index.html';
 
-document
-  .querySelectorAll('.nav-links a')
-  .forEach(link => {
+document.querySelectorAll('.nav-links a').forEach(link => {
 
-    if (link.getAttribute('href') === current) {
-      link.classList.add('active');
-    }
+  if (link.getAttribute('href') === current) {
+    link.classList.add('active');
+  }
 
-  });
+});
 
 </script>
 
