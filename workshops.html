@@ -5,8 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description"
-        content="Animal movement ecology workshops and quantitative training hosted by Katharina von Dürckheim.">
+  <meta
+    name="description"
+    content="Animal movement ecology workshops and quantitative training hosted by Katharina von Dürckheim."
+  >
 
   <title>Workshops | Katharina von Dürckheim</title>
 
@@ -14,6 +16,8 @@
 </head>
 
 <body>
+
+<!-- NAVIGATION -->
 
 <nav class="navbar">
 
@@ -43,6 +47,8 @@
 
 <main>
 
+<!-- PAGE HEADER -->
+
 <header class="page-header">
 
   <p class="eyebrow">
@@ -60,6 +66,8 @@
 </header>
 
 
+<!-- ANIMAL MOVEMENT WORKSHOP -->
+
 <section class="section">
 
   <h2>Animal movement and spatial ecology</h2>
@@ -67,7 +75,7 @@
   <article class="workshop">
 
     <h3>
-      Advanced Animal Movement Modelling — Stellenbosch University, 16-17 September 2026
+      Advanced Animal Movement Modelling — Stellenbosch, September 2026
     </h3>
 
     <p>
@@ -84,39 +92,71 @@
     </p>
 
     <p class="meta">
-      <strong>Dates:</strong> 16–17 September 2026
+
+      <strong>Dates:</strong>
+      16–17 September 2026
+
       <br>
 
-      <strong>Location:</strong> Stellenbosch University
+      <strong>Location:</strong>
+      Stellenbosch University, South Africa
+
       <br>
 
-      <strong>Presenter:</strong> Dr Josh Cullen, UC Santa Cruz
+      <strong>Lead facilitator:</strong>
+      Dr Josh Cullen, University of California Santa Cruz
+
       <br>
 
-      <strong>Hosts:</strong> Stellenbosch University,
-      Wildlife Free to Roam and NiTHeCS
+      <strong>Hosts:</strong>
+      Stellenbosch University, Wildlife Free to Roam and NiTHeCS
+
     </p>
 
+
+    <!-- WORKSHOP LINKS -->
 
     <div class="buttons">
 
       <a
         class="button primary"
-        href="https://nithecs.ac.za/events/all-events/advanced-animal-movement-modelling-training-workshop/">
-        View workshop details & programme
+        href="https://nithecs.ac.za/events/all-events/advanced-animal-movement-modelling-training-workshop/"
+        target="_blank"
+        rel="noopener noreferrer">
+        Workshop details & programme
+      </a>
+
+      <a
+        class="button secondary"
+        href="https://github.com/joshcullen/advanced_animal_movement_workshop"
+        target="_blank"
+        rel="noopener noreferrer">
+        Workshop materials & code
       </a>
 
     </div>
 
+
     <p>
-      The NiTHeCS workshop page contains registration information,
-      workshop details and the programme PDF under Materials.
+      Workshop information and the programme are available through NiTHeCS.
+      Scripts, example data and live-coding materials are maintained in the
+      workshop GitHub repository.
+    </p>
+
+    <p>
+      <em>
+        Note: the GitHub workshop repository is currently private and
+        accessible only to authorised collaborators. The link will become
+        publicly accessible if the repository is made public.
+      </em>
     </p>
 
   </article>
 
 </section>
 
+
+<!-- QUANTITATIVE ECOLOGY -->
 
 <section class="section">
 
@@ -145,13 +185,16 @@
 </section>
 
 
+<!-- TRAINING RESOURCES -->
+
 <section class="section">
 
   <h2>Training resources</h2>
 
   <p>
     Workshop slides, example datasets, R scripts and supporting materials
-    will be made available through the Resources page.
+    will be made available through the Resources page and associated
+    GitHub repositories.
   </p>
 
   <ul class="link-list">
@@ -175,8 +218,11 @@
     </li>
 
     <li>
-      <a href="https://github.com/KatharinaVonDurckheim">
-        GitHub repositories
+      <a
+        href="https://github.com/KatharinaVonDurckheim"
+        target="_blank"
+        rel="noopener noreferrer">
+        Katharina von Dürckheim — GitHub
       </a>
     </li>
 
@@ -186,6 +232,8 @@
 
 </main>
 
+
+<!-- FOOTER -->
 
 <footer>
 
@@ -197,18 +245,22 @@
 </footer>
 
 
+<!-- ACTIVE NAVIGATION -->
+
 <script>
 
 const current =
   location.pathname.split('/').pop() || 'index.html';
 
-document.querySelectorAll('.nav-links a').forEach(link => {
+document
+  .querySelectorAll('.nav-links a')
+  .forEach(link => {
 
-  if (link.getAttribute('href') === current) {
-    link.classList.add('active');
-  }
+    if (link.getAttribute('href') === current) {
+      link.classList.add('active');
+    }
 
-});
+  });
 
 </script>
 
