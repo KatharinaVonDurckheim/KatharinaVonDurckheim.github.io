@@ -3,55 +3,188 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Katharina von Dürckheim — conservation ecologist and animal movement researcher.">
+
+  <meta
+    name="description"
+    content="Publications by Katharina von Dürckheim — conservation ecology, animal movement ecology and applied wildlife research."
+  >
+
   <title>Publications | Katharina von Dürckheim</title>
+
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
 <nav class="navbar">
-  <a class="brand" href="index.html">Katharina von Dürckheim</a>
-  <button class="menu-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+
+  <a class="brand" href="index.html">
+    Katharina von Dürckheim
+  </a>
+
+  <button
+    class="menu-toggle"
+    aria-label="Toggle navigation"
+    onclick="document.querySelector('.nav-links').classList.toggle('open')">
+    ☰
+  </button>
+
   <div class="nav-links">
     <a href="index.html">Home</a>
     <a href="research.html">Research</a>
     <a href="publications.html">Publications</a>
-    <a href="projects.html">Projects</a>
-    <a href="teaching.html">Teaching & Workshops</a>
+    <a href="resources.html">Resources</a>
+    <a href="workshops.html">Workshops</a>
     <a href="wfr.html">Wildlife Free to Roam</a>
     <a href="cv.html">CV</a>
   </div>
+
 </nav>
+
 
 <main>
 
 <header class="page-header">
+
   <p class="eyebrow">Publications</p>
+
   <h1>Peer-reviewed research and applied outputs</h1>
-  <p class="lead">Replace the placeholders below with your publications, or link this page to an automatically updated ORCID or Google Scholar profile.</p>
+
+  <p class="lead">
+    My research focuses on animal movement ecology, spatial ecology,
+    transboundary conservation and applied wildlife research in African
+    landscapes.
+  </p>
+
+  <div class="social-links">
+
+    <a
+      href="https://orcid.org/0000-0002-5176-1665"
+      target="_blank"
+      rel="noopener noreferrer">
+      ORCID
+    </a>
+
+    <a
+      href="#"
+      title="Add Google Scholar URL">
+      Google Scholar
+    </a>
+
+    <a
+      href="https://www.researchgate.net/profile/Katharina-Em-Von-Durckheim"
+      target="_blank"
+      rel="noopener noreferrer">
+      ResearchGate
+    </a>
+
+  </div>
+
 </header>
+
+
 <section class="section">
+
   <h2>Selected publications</h2>
+
+  <p>
+    A complete and current record of my research outputs is available through
+    <a
+      href="https://orcid.org/0000-0002-5176-1665"
+      target="_blank"
+      rel="noopener noreferrer">
+      ORCID
+    </a>.
+  </p>
+
   <ol class="publications">
-    <li><strong>Author, A., von Dürckheim, K., et al.</strong> (Year). Publication title. <em>Journal Name</em>. DOI</li>
-    <li><strong>von Dürckheim, K., et al.</strong> (Year). Publication title. <em>Journal Name</em>. DOI</li>
-    <li><strong>Author, A., von Dürckheim, K., et al.</strong> (Year). Publication title. <em>Journal Name</em>. DOI</li>
+
+    <!--
+    ADD PUBLICATIONS HERE.
+
+    Example:
+
+    <li>
+      <strong>von Dürckheim, K., Author, A., Author, B.</strong>
+      (2026).
+      Title of publication.
+      <em>Journal Name</em>.
+      <a href="https://doi.org/XXXXXXXX">DOI</a>
+    </li>
+    -->
+
   </ol>
-  <div class="notice">Add your Google Scholar, ORCID and ResearchGate links here.</div>
+
+</section>
+
+
+<section class="section">
+
+  <h2>Research outputs</h2>
+
+  <div class="cards">
+
+    <article class="card">
+      <h3>Peer-reviewed publications</h3>
+      <p>
+        Scientific publications arising from movement ecology,
+        wildlife telemetry and conservation research.
+      </p>
+    </article>
+
+    <article class="card">
+      <h3>Data & code</h3>
+      <p>
+        Reproducible workflows, research code and open scientific
+        resources associated with current projects.
+      </p>
+
+      <a class="text-link" href="resources.html">
+        Explore resources →
+      </a>
+    </article>
+
+    <article class="card">
+      <h3>Applied outputs</h3>
+      <p>
+        Technical reports, conservation guidance and other outputs
+        developed for conservation practice and decision-making.
+      </p>
+    </article>
+
+  </div>
+
 </section>
 
 </main>
 
+
 <footer>
-  <p>© 2026 Katharina von Dürckheim · Conservation ecology and animal movement research</p>
+
+  <p>
+    © 2026 Katharina von Dürckheim ·
+    Conservation ecology and animal movement research
+  </p>
+
 </footer>
+
+
 <script>
+
 document.querySelectorAll('.nav-links a').forEach(link => {
-  if (link.getAttribute('href') === location.pathname.split('/').pop() ||
-      (location.pathname.endsWith('/') && link.getAttribute('href') === 'index.html')) {
+
+  if (
+    link.getAttribute('href') === location.pathname.split('/').pop() ||
+    (
+      location.pathname.endsWith('/') &&
+      link.getAttribute('href') === 'index.html'
+    )
+  ) {
     link.classList.add('active');
   }
+
 });
+
 </script>
 
 </body>
